@@ -5,26 +5,21 @@
 class Amanmcp < Formula
   desc "Local-first RAG MCP server for AI coding assistants"
   homepage "https://github.com/Aman-CERP/amanmcp-raw"
-  version "1.0.0"
+  version "0.1.42"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/Aman-CERP/amanmcp-raw/releases/download/v1.0.0/amanmcp_1.0.0_darwin_arm64.tar.gz"
-    sha256 "48915bd8739325a4f96b426c48bf472598785eb2b9bdaa05b446d7a8b577a9ee"
+    url "https://github.com/Aman-CERP/amanmcp-raw/releases/download/v0.1.42/amanmcp_0.1.42_darwin_arm64.tar.gz"
+    sha256 "8c623ddfd3421caaf8e2701466eb0927764bbcc1e06d97237b34b65455d023eb"
 
     def install
       bin.install "amanmcp"
-      lib.install "lib/libusearch_c.dylib"
     end
   end
 
   def caveats
     <<~EOS
-      USearch library has been installed to:
-        #{HOMEBREW_PREFIX}/lib/libusearch_c.dylib
-      This is loaded automatically when running amanmcp.
-
       To get started:
         cd your-project
         amanmcp
