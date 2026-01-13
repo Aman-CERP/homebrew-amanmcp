@@ -5,13 +5,13 @@
 class Amanmcp < Formula
   desc "Local-first RAG MCP server for AI coding assistants"
   homepage "https://github.com/Aman-CERP/amanmcp-raw"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/Aman-CERP/amanmcp-raw/releases/download/v0.3.1/amanmcp_0.3.1_darwin_arm64.tar.gz"
-    sha256 "3474ef83acaf80ac50d3281ca240d2e41bb1a2425e5947e4c25ce3cc76ed62de"
+    url "https://github.com/Aman-CERP/amanmcp-raw/releases/download/v0.3.2/amanmcp_0.3.2_darwin_arm64.tar.gz"
+    sha256 "6398d912597f91acec9ecf467c1ca949b5700f4575363d3b5035044f54759a17"
 
     def install
       bin.install "amanmcp"
