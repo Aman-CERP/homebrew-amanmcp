@@ -1,0 +1,5 @@
+# Tap Migrations
+# Maps old formula names to new cask names for seamless upgrade
+{
+  "amanmcp": "amanmcp"
+}
